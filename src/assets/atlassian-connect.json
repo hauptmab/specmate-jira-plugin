@@ -1,0 +1,41 @@
+{
+	"name": "Specmate integration for JIRA",
+	"key": "com.specmate.integrations.jiraapp",
+	"baseUrl": "https://specmate-jira-plugin.stackblitz.io/",
+	"vendor": {
+		"name": "Specmate.io",
+		"url": "http://specmate.io"
+	},
+  	"authentication": {
+		"type": "none"
+	},
+	"scopes": [
+		"READ",
+		"WRITE",
+		"DELETE"
+	],
+	"modules": {
+		"jiraProjectAdminTabPanels": [
+			{
+				"url": "/settings",
+				"key": "project-settings",
+				"location": "projectgroup4",
+				"weight": 100,
+				"name": {
+					"value": "Specmate Settings"
+				}
+			}
+		],
+		"webPanels": [
+			{
+				"url": "/issueview.html",
+				"key": "issue-view",
+				"location": "atl.jira.view.issue.left.context",
+				"weight": 100,
+				"name": {
+					"value": "Acceptance Criteria"
+				}
+			}
+		]
+	}
+}
